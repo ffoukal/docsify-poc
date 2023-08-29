@@ -1,21 +1,27 @@
 <!DOCTYPE html>
 <html>
-  <head>
+
+<head>
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
     <meta name="viewport" content="width=device-width,initial-scale=1" />
     <meta charset="UTF-8" />
-    <link
-      rel="stylesheet"
-      href="//cdn.jsdelivr.net/npm/docsify@4/themes/vue.css"
-    />
-  </head>
-  <body>
+    <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/docsify@4/themes/vue.css" />
+</head>
+
+<body>
     <div id="app"></div>
     <script>
-      window.$docsify = {
-        //...
-      };
+        window.$docsify = {
+            repo: 'https://github.com/ffoukal/docsify-poc',
+            alias: {
+                '/.*/_sidebar.md': '/_sidebar.md'
+            },
+            subMaxLevel: 2,
+            name: 'Documentation poc',
+            loadSidebar: true,
+        };
     </script>
     <script src="//cdn.jsdelivr.net/npm/docsify@4"></script>
-  </body>
+</body>
+
 </html>
